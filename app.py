@@ -6,8 +6,8 @@ import requests
 # Load API secrets
 from dotenv import load_dotenv
 load_dotenv()
-CLOUDFLARE_ACCOUNT_ID = os.environ.get("CF_ACCOUNT_ID")
-CLOUDFLARE_API_TOKEN= os.environ.get("CF_API_TOKEN")
+CLOUDFLARE_ACCOUNT_ID = 'bf167460d09308a3f294727186c2c8b5'
+CLOUDFLARE_API_TOKEN = '--aXd8RnXPWjGLpIoAm370QRWtsVHUpzI7pD_8nc'
 url = f'https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/mistral/mistral-7b-instruct-v0.1'
 
 def main():
